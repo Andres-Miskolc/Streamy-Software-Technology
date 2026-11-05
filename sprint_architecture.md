@@ -2,6 +2,10 @@
 ---
 title: Streamy Sprint Board Execution Lifecycle
 ---
+---
+title: Streamy Sprint Board Execution Lifecycle
+---
+```mermald
 flowchart TD
 %% Define Lane Subgraphs to simulate Kanban state boundaries
 subgraph Backlog [1. Backlog / Todo Pool]
@@ -18,4 +22,5 @@ Merged["📦 Merged Base Code & Docs synced"]
 end
 %% Flow transitions
 T1 --> |Pick Task| Active
+Active --> |Code Review PR Approved| Merged
 Active --> |Code Review PR Approved| Merged
