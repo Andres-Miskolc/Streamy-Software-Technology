@@ -50,7 +50,7 @@ Season "1" *-- "1..*" Episode : contains
 Title "0..*" o-- "1..*" Actor : features
 Film --|> Title : extends
 TVShow --|> Title : extends
-
+```
 ## Foundational Object-Oriented Entity Specifications
 
 ### 1. Conceptual Domain Breakdown
